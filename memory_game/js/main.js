@@ -40,7 +40,7 @@ var flipCard = function () {
   this.setAttribute('src', cards[cardId].cardImage);
 
    if (cardsInPlay.length === 2)
-     checkForMatch();
+     setTimeout(checkForMatch, 200);
 }
 
 var createBoard = function(){
